@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>luajit.native</id>
+    <version>2.0.5</version>
+    <authors>Mike Pall</authors>
+    <owners>Nicolas Noble</owners>
+    <projectUrl>http://luajit.org/</projectUrl>
+    <license type="expression">MIT</license>
+    <iconUrl>http://luajit.org/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Headers, import libraries, and runtime dlls for LuaJIT.</description>
+    <summary>Headers, import libraries, and runtime dlls for LuaJIT.</summary>
+    <tags>luajit native nativepackage</tags>
+  </metadata>
+  <files>
+    <file src="luajit.native.targets" target="build\native" />
+    <file src="luajit\src\lauxlib.h" target="build\native\include" />
+    <file src="luajit\src\lua.h" target="build\native\include" />
+    <file src="luajit\src\lua.hpp" target="build\native\include" />
+    <file src="luajit\src\luaconf.h" target="build\native\include" />
+    <file src="luajit\src\luajit.h" target="build\native\include" />
+    <file src="luajit\src\lualib.h" target="build\native\include" />
+    <file src="build32\*.lib" target="build\native\lib\Win32" />
+    <file src="build64\*.lib" target="build\native\lib\x64" />
+    <file src="build32\*.dll" target="build\native\bin\Win32" />
+    <file src="build64\*.dll" target="build\native\bin\x64" />
+  </files>
+</package>

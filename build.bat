@@ -18,3 +18,5 @@ call msvcbuild amalg
 cd ..\..
 mkdir build64
 copy luajit\src\lua51.* build64
+
+nuget pack
