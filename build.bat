@@ -5,6 +5,8 @@ for /f "usebackq delims=" %%i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\
   )
 )
 
+set XCFLAGS=/DLUAJIT_ENABLE_LUA52COMPAT
+
 cd luajit\src
 call "%INSTALLDIR%"\Common7\Tools\vsdevcmd.bat -arch=x86
 call msvcbuild amalg
