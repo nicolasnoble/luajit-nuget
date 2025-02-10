@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>luajit.native</id>
-    <version>2.1.0-beta3d</version>
+    <version>2.1.1739213504</version>
     <authors>Mike Pall</authors>
     <owners>Nicolas Noble</owners>
     <projectUrl>http://luajit.org/</projectUrl>
