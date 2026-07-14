@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>luajit.native</id>
-    <version>2.1.1739213504</version>
+    <version>2.1.1784047354</version>
     <authors>Mike Pall</authors>
     <owners>Nicolas Noble</owners>
     <projectUrl>http://luajit.org/</projectUrl>
@@ -21,9 +21,9 @@
     <file src="luajit\src\luaconf.h" target="build\native\include" />
     <file src="luajit\src\luajit.h" target="build\native\include" />
     <file src="luajit\src\lualib.h" target="build\native\include" />
-    <file src="build32\*.lib" target="build\native\lib\Win32" />
-    <file src="build64\*.lib" target="build\native\lib\x64" />
-    <file src="build32\*.dll" target="build\native\bin\Win32" />
-    <file src="build64\*.dll" target="build\native\bin\x64" />
+    <file src="build-x86\*.lib" target="build\native\lib\Win32" />
+    <file src="build-x86\*.dll" target="build\native\bin\Win32" />
+    <file src="build-amd64\*.lib" target="build\native\lib\x64" />
+    <file src="build-amd64\*.dll" target="build\native\bin\x64" />
   </files>
 </package>

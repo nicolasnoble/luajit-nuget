@@ -13,8 +13,8 @@ cd src
 call "%INSTALLDIR%"\Common7\Tools\vsdevcmd.bat -arch=x86
 call msvcbuild amalg
 cd ..\..
-mkdir build32
-copy luajit\src\lua51.* build32
+mkdir build-x86
+copy luajit\src\lua51.* build-x86
 
 cd luajit
 git clean -f -d -x
@@ -22,7 +22,7 @@ cd src
 call "%INSTALLDIR%"\Common7\Tools\vsdevcmd.bat -arch=amd64
 call msvcbuild amalg
 cd ..\..
-mkdir build64
-copy luajit\src\lua51.* build64
+mkdir build-amd64
+copy luajit\src\lua51.* build-amd64
 
 nuget pack
