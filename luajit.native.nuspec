@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>luajit.native</id>
-    <version>2.1.1784047354</version>
+    <version>2.1.1785598229</version>
     <authors>Mike Pall</authors>
     <owners>Nicolas Noble</owners>
     <projectUrl>http://luajit.org/</projectUrl>
